@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorKey - Tutoring Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Link -->
+    <script 
+        src="https://kit.fontawesome.com/cb11e3e4f4.js" 
+        crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+
+
+<header>
+    <nav class="navbar" role="navigation"aria-label="Main Navigation">
+        <div class="navbar__container">
+            <a href="/" id="navbar-logo">Logo</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/courses.html" class="navbar__links">Courses</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/pricing.html" class="navbar__links">Pricing</a>
+                </li>
+                <li class="navbar__button mobile">
+                    <a href="/signup.html" class="button">Sign Up</a>
+                </li>
+            </ul>
+
+            <div class="navbar__button desktop">
+                <a href="/signup.html" class="button">Sign Up</a>
+            </div>
+
+            <button 
+                class="navbar__toggle" 
+                id="mobile-menu" 
+                aria-label="Toggle Navigation" 
+                aria-expanded=""
+                false
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<section class="services">
+    <h2>Choose the right plan for you</h2>
+
+    <!-- Pricing Toggle Button -->
+     <div class="pricing-toggle">
+        <div class="toggle-container">
+            <span class="toggle-option">Monthly</span>
+            <label class="switch">
+                <input 
+                    type="checkbox" 
+                    id="pricing-toggle-checkbox" 
+                    onclick="switchPricing()"
+                />
+
+                <span class="slider"></span>
+            </label>
+            <span class="toggle-option">Yearly</span>
+        </div>
+        <div class="save-percentage-container">
+            <span class="save-percentage">Save 20%</span>
+        </div>
+     </div>
+
+     <div class="services__container">
+        <!-- Basic Plan -->
+        <div class="services__course">
+            <div class="course-content">
+                <h3>Basic Plan</h3>
+                <div class="course-price">
+                    <p class="price monthly-price">$10/month</p>
+                    <p class="price yearly-price hidden">$8/month</p>
+                    <a href="/signup.html" class="price-button">Get Started</a>
+                    <p id="small-desc">Everything you need to get started</p>
+                </div>
+
+                <div class="course-features">
+                    <p>Features:</p>
+                    <ul>
+                        <li>Access to one course of your choice</li>
+                        <li>Ideal for focused learning</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Standart Plan -->
+        <div class="services__course">
+            <div class="course-content">
+                <h3>Standart Plan</h3>
+                <div class="course-price">
+                    <p class="price monthly-price">$20/month</p>
+                    <p class="price yearly-price hidden">$15/month</p>
+                    <a href="/signup.html" class="price-button">Get Started</a>
+                    <p id="small-desc">For those who need more</p>
+                </div>
+
+                <div class="course-features">
+                    <p>Features:</p>
+                    <ul>
+                        <li>Access 3+ courses of your choice</li>
+                        <li>Ideal for flexibility and variety of choices without overabundance</li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Advanced Plan -->
+        <div class="services__course">
+            <div class="course-content">
+                <h3>Basic Plan</h3>
+                <div class="course-price">
+                    <p class="price monthly-price">$50/month</p>
+                    <p class="price yearly-price hidden">$40/month</p>
+                    <a href="/signup.html" class="price-button">Get Started</a>
+                    <p id="small-desc">Everything you can get</p>
+                </div>
+
+                <div class="course-features">
+                    <p>Features:</p>
+                    <ul>
+                        <li>Access all courses</li>
+                        <li>Best for dedicated learners and families</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+
+     </div>
+ </section>
+ <script src="app.js"></script>
+</body>
+</html>
