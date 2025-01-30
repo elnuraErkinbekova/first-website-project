@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorKey - Tutoring Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Link -->
+    <script 
+        src="https://kit.fontawesome.com/cb11e3e4f4.js" 
+        crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+
+
+<header>
+    <nav class="navbar" role="navigation"aria-label="Main Navigation">
+        <div class="navbar__container">
+            <a href="/" id="navbar-logo">Logo</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/courses.html" class="navbar__links">Courses</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/pricing.html" class="navbar__links">Pricing</a>
+                </li>
+                <li class="navbar__button mobile">
+                    <a href="/signup.html" class="button">Sign Up</a>
+                </li>
+            </ul>
+
+            <div class="navbar__button desktop">
+                <a href="/signup.html" class="button">Sign Up</a>
+            </div>
+
+            <button 
+                class="navbar__toggle" 
+                id="mobile-menu" 
+                aria-label="Toggle Navigation" 
+                aria-expanded=""
+                false
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<section class="signup-section" id="signup">
+    <div class="signup-container">
+        <h2>Join Us Today!</h2>
+        <p>Sign up now and get 10% discount.</p>
+        <form class="signup-form">
+            <input type="text" placeholder="Enter your name" class="signup-input">
+            <input type="email" placeholder="Enter your email" class="signup-input">
+            <button type="button" class="signup-button">Sign Up</button>
+        </form>
+    </div>
+</section>
+</body>
+</html>
