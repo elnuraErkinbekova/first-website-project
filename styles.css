@@ -83,7 +83,7 @@
     transition: all 0.3s ease;
 }
 
-navbar__toggle {
+.navbar__toggle {
     display: none;
 }
 
