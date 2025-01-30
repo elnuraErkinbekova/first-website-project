@@ -100,4 +100,23 @@ navbar__toggle {
         cursor: pointer;
         padding: 0;
     }
+
+    .navbar__menu {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        top: 80px;
+    }
+
+    .navbar__menu.active {
+        left: 0;
+        opacity: 1;
+    }
+
+    .navbar__item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }    
