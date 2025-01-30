@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: "Kumbh Sans", sans-serif;
-    overflow: hidden;
 }
 
 .navbar__container{
@@ -88,7 +87,7 @@
 }
 
 @media screen and (max-width: 968px){
-    .fa-bars {
+    .fa-solid {
         line-height: normal !important;
     }
 
@@ -270,6 +269,7 @@
 
 .rotating-logos:hover .rotating-logos__track {
     animation-play-state: paused;
+    cursor: pointer;
 }
 
 .rotating-logos__track {
@@ -291,5 +291,318 @@
 
     100% {
         transform: translateX(-100%);
+    }
+}
+
+/* Why Choose Us Section */
+.choose-us {
+    background-color: #f478a2;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.choose-us h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.choose-us .intro-text {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 50px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    align-items: center ;   
+}
+
+.feature-item {
+    background-color: #000;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: left;
+    max-width: 250px;
+}
+
+.feature-item i.icon {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .features-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        max-width: 100%;
+    }
+    .choose-us .intro-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* Pricing Plans CSS */
+.services {
+    text-align: center;
+    padding: 2rem 1 rem;
+    z-index: 1;
+    background: #ce3582;
+}
+
+.services h2 {
+    margin-bottom: 2rem;
+}
+
+.pricing-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+.pricing-toggle .toggle-option {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.pricing-toggle .save-percentage-container {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-toggle .save-percentage {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f478a2;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #e3589d;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 px #ce3582;
+}
+
+input:checked + .slider::before {
+    transform: translateX(30px);
+}
+
+.services {
+    background: #000;
+    padding: 100px 0px;
+}
+
+.services h2 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.services__container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.services__course {
+    background-color:#fff ;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.05);
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.services__course:hover {
+    background-color: #e7e7e7;
+}
+
+.course-content {
+    flex-grow: 1;
+}
+
+.services__course h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.services__course p {
+    margin-bottom: 1rem;
+    color: rgb(36, 40, 36);
+}
+
+.services__course ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.services__course ul li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.course-price {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.course-price .price {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.price-button {
+    display: inline-block;
+    background-color: #ec4884;
+    border: none;
+    color: #fff;
+    padding: 0.75rem 2.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-decoration: none;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.price-button:hover {
+    background-color: #fc76b9;
+}
+
+#small-desc {
+    font-size: 1rem;
+    color: #999;
+    text-align: center;
+    padding: 8px 0px;
+}
+
+.course-features {
+    text-align: left;
+}
+
+.course-features ul li {
+    font-size: 1rem;
+    color: #7c7c7c;
+}
+
+.save-percentage {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Pricing plans mobile CSS */
+@media (max-width: 968px) {
+    .services__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services__course {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 2rem;
+    }
+
+    .services h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services__course {
+        width: 90%;
+    }
+    .services h2 {
+        padding: 0 24px;
+        font-size: 2rem;
+    }
+
+    .pricing-toggle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-toggle .save-percentage-container {
+        margin-top:0.5rem;
+        justify-content: center;
     }
 }

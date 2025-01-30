@@ -79,9 +79,135 @@
             </div>
         </div>
 
+        <!-- 'Why Choose Us' Section -->
+        <section class="choose-us">
+            <div class="container">
+                <h2>Why Choose Us</h2>
+                <p class="intro-text">
+                    Achieve your academic goals with personalized, expert-led online tutoring designed just for you.
+                </p>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-arrow-up icon"></i>
+                        <h3>Targeted & Results-driven</h3>
+                        <p>Whether it's improving grades, preparing for exams, or building confidence, we’ve helped countless students achieve their goals.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-chalkboard-user icon"></i>
+                        <h3>Qualified & Supportive</h3>
+                        <p>Our team consists of highly qualified and experienced educators who are passionate about helping students succeed.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-bullseye icon"></i>
+                        <h3>Tailored & Adaptive</h3>
+                        <p>We design lessons that cater to individual learning styles, ensuring each session is as effective as possible.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-laptop icon"></i>
+                        <h3>Modern & Resource-rich</h3>
+                        <p>Our advanced online platform provides a seamless and engaging learning experience with cutting-edge tools and resources.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+         <section class="services">
+            <h2>Choose the right plan for you</h2>
+
+            <!-- Pricing Toggle Button -->
+             <div class="pricing-toggle">
+                <div class="toggle-container">
+                    <span class="toggle-option">Monthly</span>
+                    <label class="switch">
+                        <input 
+                            type="checkbox" 
+                            id="pricing-toggle-checkbox" 
+                            onclick="switchPricing()"
+                        />
+
+                        <span class="slider"></span>
+                    </label>
+                    <span class="toggle-option">Yearly</span>
+                </div>
+                <div class="save-percentage-container">
+                    <span class="save-percentage">Save 20%</span>
+                </div>
+             </div>
+
+             <div class="services__container">
+                <!-- Basic Plan -->
+                <div class="services__course">
+                    <div class="course-content">
+                        <h3>Basic Plan</h3>
+                        <div class="course-price">
+                            <p class="price monthly-price">$10/month</p>
+                            <p class="price yearly-price hidden">$8/month</p>
+                            <a href="/signup.html" class="price-button">Get Started</a>
+                            <p id="small-desc">Everything you need to get started</p>
+                        </div>
+
+                        <div class="course-features">
+                            <p>Features:</p>
+                            <ul>
+                                <li>Access to one course of your choice</li>
+                                <li>Ideal for focused learning</li>
+                            </ul>
+                        </div>
 
 
+                    </div>
+                </div>
+                <!-- Standart Plan -->
+                <div class="services__course">
+                    <div class="course-content">
+                        <h3>Standart Plan</h3>
+                        <div class="course-price">
+                            <p class="price monthly-price">$20/month</p>
+                            <p class="price yearly-price hidden">$15/month</p>
+                            <a href="/signup.html" class="price-button">Get Started</a>
+                            <p id="small-desc">For those who need more</p>
+                        </div>
 
+                        <div class="course-features">
+                            <p>Features:</p>
+                            <ul>
+                                <li>Access 3+ courses of your choice</li>
+                                <li>Ideal for flexibility and variety of choices without overabundance</li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Advanced Plan -->
+                <div class="services__course">
+                    <div class="course-content">
+                        <h3>Basic Plan</h3>
+                        <div class="course-price">
+                            <p class="price monthly-price">$50/month</p>
+                            <p class="price yearly-price hidden">$40/month</p>
+                            <a href="/signup.html" class="price-button">Get Started</a>
+                            <p id="small-desc">Everything you can get</p>
+                        </div>
+
+                        <div class="course-features">
+                            <p>Features:</p>
+                            <ul>
+                                <li>Access all courses</li>
+                                <li>Best for dedicated learners and families</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+             </div>
+         </section>
     </main>
 
     <script src="app.js"></script>
