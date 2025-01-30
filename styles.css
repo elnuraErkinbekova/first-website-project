@@ -259,3 +259,37 @@
     }
 
 }
+
+/* Rotating Logos */
+.rotating-logos {
+    overflow: hidden;
+    padding: 40px 0;
+    background: #f8f8f8;
+    white-space: nowrap;
+}
+
+.rotating-logos:hover .rotating-logos__track {
+    animation-play-state: paused;
+}
+
+.rotating-logos__track {
+    display: inline-block;
+    animation: rotate 12s linear infinite;
+}
+
+.logo-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ce3582;
+    margin: 0 40px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
