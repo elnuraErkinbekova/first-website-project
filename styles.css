@@ -66,6 +66,8 @@
 }
 
 .button {
+    display: flex;
+    align-items: center;
     background: #ec4884    ;
     padding: 10px 20px;
     border: none;
@@ -86,6 +88,10 @@ navbar__toggle {
 }
 
 @media screen and (max-width: 968px){
+    .fa-bars {
+        line-height: normal !important;
+    }
+
     .navbar__toggle {
         display: block;
         position: absolute;
@@ -107,6 +113,14 @@ navbar__toggle {
         align-items: center;
         position: fixed;
         top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100% - 80px);
+        opacity: 0;
+        transition: all 0.5s ease;
+        background: #131313;
+        z-index: 10;
+        margin: 0;
     }
 
     .navbar__menu.active {
@@ -117,6 +131,32 @@ navbar__toggle {
     .navbar__item {
         width: 100%;
         display: flex;
+        justify-content: center;
+    }
+
+    .navbar__links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Sign Up Button */
+    .navbar__button.desktop {
+        display: none;
+    }
+
+    .navbar__button.mobile {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+
+    .button {
+        width: 80%;
+        height: 60px;
         justify-content: center;
     }
 }    
