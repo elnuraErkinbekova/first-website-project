@@ -166,7 +166,10 @@ img {
         display: flex;
         justify-content: center;
         padding-bottom: 2rem;
-        width: 100%;
+        width: 80%;
+        align-items: center;
+        height: 60-x;
+        font-size: 1.5rem;
     }
 
     .button {
@@ -318,6 +321,10 @@ img {
 
 /* Why Choose Us Section */
 .choose-us {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #f478a2;
     padding: 100px 20px;
     text-align: center;
@@ -394,6 +401,10 @@ img {
 
 /* Pricing Plans CSS */
 .services {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     padding: 2rem 1 rem;
     z-index: 1;
