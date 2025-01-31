@@ -10,14 +10,20 @@ TutorKey is a frontend-only website created for learning and practicing HTML, CS
 
 ## Project Structure
 ```
-/ TutorKey
-│── index.html       # Homepage
-│── pricing.html     # Pricing plans page
-│── courses.html     # TutorKey overview page
-│── signup.html      # Sign-up section
-│── styles.css       # Main stylesheet
-│── app.js           # JavaScript functionality
-│── README.md        # Project documentation
+TutorKey
+├── assets
+│   └── images           # Contains website images
+├── css
+│   └── styles.css       # Main stylesheet
+├── js
+│   └── app.js           # Main JavaScript file
+├── pages
+│   ├── courses.html     # Courses page
+│   ├── signup.html      # Sign-up page
+│   └── pricing.html     # Pricing page
+├── index.html           # Homepage
+├── README.md            # Project documentation
+
 ```
 
 ## How to Run the Project
