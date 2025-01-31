@@ -33,7 +33,7 @@ img {
     color: #ff3d7e   ;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .navbar__menu {
@@ -52,9 +52,10 @@ img {
     color: #fff;
     text-decoration: none;
     height: 100%;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     display: flex;
     align-items: center;
+    font-size: 2rem;
 }
 
 .navbar__links:hover {
@@ -132,11 +133,14 @@ img {
         background: #131313;
         z-index: 10;
         margin: 0;
+        overflow: hidden;
     }
 
     .navbar__menu.active {
         left: 0;
         opacity: 1;
+        display: flex;
+        flex-direction: column;
     }
 
     .navbar__item {
@@ -147,10 +151,11 @@ img {
 
     .navbar__links {
         text-align: center;
-        padding: 2rem;
+        padding: 1rem;
         width: 100%;
         display: flex;
         justify-content: center;
+        font-size: 1.5rem;
     }
 
     /* Sign Up Button */
